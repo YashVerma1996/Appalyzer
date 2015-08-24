@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:gravity="center">
+   <!-- android:paddingTop="?android:attr/actionBarSize"-->
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_header"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/progress_start"
+        android:id="@+id/TotalUsage" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lLayout">
+
+        <TextView
+            android:id="@+id/tuHr"
+            style="@style/RobotoCondensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:text="4"
+            android:textSize="20sp"
+            android:textColor="@color/progress_start" />
+
+        <TextView
+            android:id="@+id/tuHrLabel"
+            android:textColor="@color/progress_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hr"
+            android:textSize="16sp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/tuMin"
+            style="@style/RobotoCondensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:text="45"
+            android:textSize="20sp"
+            android:textColor="@color/progress_start" />
+
+        <TextView
+            android:id="@+id/tuMinLabel"
+            android:textColor="@color/progress_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
