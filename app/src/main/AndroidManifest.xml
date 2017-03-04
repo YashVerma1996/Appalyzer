@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="commandoengineer.appalyzer.MainActivity"
             android:label="Appalyzer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,15 +20,15 @@
         </activity>
 
         <provider
-            android:name=".database.AppStatsProvider"
+            android:name="commandoengineer.appalyzer.database.AppStatsProvider"
             android:authorities="com.commando.appalyzer"
             android:enabled="true"
             android:exported="true"></provider>
         <service
-            android:name=".AppalyzerService"
+            android:name="commandoengineer.appalyzer.AppalyzerService"
             android:enabled="true"
             android:exported="false" />
-        <receiver android:name=".AppalyzerService$AlarmReceived"
+        <receiver android:name="commandoengineer.appalyzer.AppalyzerService$AlarmReceived"
             android:enabled="true"
             android:exported="false"
             />
